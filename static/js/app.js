@@ -55,6 +55,6 @@ setTimeout(function() {
       $('body, html').addClass('on'); 
       
       
-  	}, 500)
-  }, 500)
-}, 300)
+  	}, 350)
+  }, 300)
+}, 600)
