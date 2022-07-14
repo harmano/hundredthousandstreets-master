@@ -34,6 +34,15 @@
 
         gtag('config', 'G-2S6W36YYSW');
         </script>
+        <script src="https://www.google.com/recaptcha/api.js?render={your-site-key}"></script>
+        <script>
+            grecaptcha.ready(function () {
+                grecaptcha.execute('{your-site-key}', {action: 'submit'}).then(function (token) {
+                    console.info("got token: " + token);
+                    document.getElementById('g-recaptcha-response').value = token;
+                });
+            });
+        </script>
     </head>
 
     <body>
@@ -133,10 +142,15 @@
                     <div class="col text-left texty phone-text-2"><a target="_blank" href="http://www.instagram.com/hundredthousandstreets"> @hundredthousandstreets</a></div>
                 </div>
                 <div class="row" style="padding-top:20px;">
+                  <div class="col-4 col text-right"><i class="  fas fa-phone" style="padding-left: ; font-size:20px; color:black;"></i></div>
+                  <div class="col text-left texty phone-text-2"><a style="color:black;" href="tel:647-741-0742">(647) 741-0742</a></div>
+                </div>
+                <!--
+                   <div class="row" style="padding-top:20px;">
                     <div class="col-4 col text-right"><a  target="_blank" href="https://www.facebook.com/Hundred-Thousand-Streets-102393484951520s"><i class="  fab fa-facebook-f" style="padding-left: ; font-size:20px; color:black;"></i></a></div>
                     <div class="col text-left texty phone-text-2" ><a target="_blank" href="https://www.facebook.com/Hundred-Thousand-Streets-102393484951520s"> @hundredthousandstreets</a></div>
                 </div>
-                <!--<div class="row" style="padding-top:20px;">
+                  <div class="row" style="padding-top:20px;">
                     <div class="col-4 col text-right"><i class="  fas fa-phone" style="padding-left: ; font-size:20px; color:black;"></i></div>
                     <div class="col text-left texty phone-text-2"><a style="color:black;" href="tel:647-795-6275">(647) 795-6275</a></div>
                 </div>-->
@@ -147,7 +161,7 @@
                 </div>-->
                 <div class="row" style="padding-top:20px;">
                     <div class="col-4 col text-right"><i class="fas fa-map-marker-alt"  style="padding-left: ; font-size:20px; color:black;"></i></div>
-                    <div   class="col text-left texty phone-text"><a target="_blank" href="https://www.google.com/maps/place/1730+Steeles+Ave+E+%231,+Brampton,+ON+L6T+1A4/@43.6992675,-79.7001921,17z/data=!3m1!4b1!4m5!3m4!1s0x882b3e7cfde5a22d:0xa5f5983fb8f2d297!8m2!3d43.6992636!4d-79.6980034">1730 Steeles Ave East Unit #1 Brampton, Ontario</a></div>
+                    <div   class="col text-left texty phone-text"><a target="_blank" href="https://goo.gl/maps/xg8CjDcRbHRcGibu8">12723 The Gore Rd unit 1, Bolton, ON L7C 3C8</a></div>
                 </div>
                 <div class="row" style="padding-top:20px;">
                     <div class="col-4 col text-right"><i class="far fa-clock"  style="padding-left: ; font-size:20px; color:black;"></i></div>
@@ -168,27 +182,30 @@
                   <form class="col s12" action="https://formspree.io/f/xoqroobe" method="POST">
                     <div class="row">
                       <div class="input-field col s12">
+                        <label style="font-size:14px;" name="name" for="name" >Name</label>
                         <input placeholder="" id="name" type="text" class="validate" required>
-                        <label style="font-size:14px;" for="first_name " >Name</label>
                       </div>
                     </div>
                     <div class="row">
                       <div class="input-field col s12">
-                        <input placeholder="" id="email" type="email" class="validate" required>
-                        <label style="font-size:14px;" for="email">Email</label>
+                        <input placeholder="" id="email" type="email" name="email"  class="validate" required>
+                        <label style="font-size:14px;" for="email" >Email</label>
+                        <span class="helper-text" data-error="please enter valid email" data-success=""></span>
                       </div>
                     </div>
                     <div class="row">
                       <div class="input-field col s12">
-                        <input placeholder="" id="Phone" type="text" class="validate" required>
+                        <input placeholder="" id="phone" name="phone" type="tel" class="validate" pattern="[0-9]{10}" required>
                         <label style="font-size:14px;" for="phone">Phone</label>
+                        <span class="helper-text" data-error="please enter valid number Format: 123-456-7890" data-success=""></span>
                       </div>
                     </div>
                     <div style="padding-right:10px; padding-left:10px;"class="row">
-                        <label style="font-size:11px;" for="message">Message</label required>
+                        <label style="font-size:11px;" name="message" for="message">Message</label required>
                          <textarea style="opacity:; border-radius:5px; border-color: lightgrey; height:160px" id="subject" name="subject" placeholder=""  ></textarea>
                     </div>
                     <div style="margin-top:-0%; margin-left:1px;"class="row">
+
                       <button type="submit"  class="retro-button" >SUBMIT</button>
                     </div>
                   </form>
