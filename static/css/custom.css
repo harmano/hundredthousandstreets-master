@@ -19,17 +19,17 @@
 }
 
 .portfolio-experiment {
-  color: #000000;
+  color: #FFF11B;
   font-weight: 900;
   text-shadow:
-  -1px -1px 0 #FFF11B,
-   0   -1px 0 #FFF11B,
-   1px -1px 0 #FFF11B,
-   1px  0   0 #FFF11B,
-   1px  1px 0 #FFF11B,
-   0    1px 0 #FFF11B,
-  -1px  1px 0 #FFF11B,
-  -1px  0   0 #FFF11B;
+  -1px -1px 0 #000000,
+   0   -1px 0 #D61A1F,
+   1px -1px 0 #D61A1F,
+   1px  0   0 #000000,
+   1px  4px 0 #D61A1F,
+   0    1px 0 #D61A1F,
+  -1px  1px 0 #D61A1F,
+  -1px  0   0 #D61A1F;
   ;
 }
 .portfolio-experiment .experiment-title {
