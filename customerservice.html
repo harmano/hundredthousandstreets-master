@@ -110,37 +110,40 @@
            <hr class="show-on-medium-and-down" >
             <!--- Email --->
 
-            <div class="hide-on-small-only col-lg-6 col-sm-12">
+            <div class=" col-lg-6 col-sm-12">
               <div class="">
                 <div class="text-center">
                     <h5 style="font-weight: 600; font-style: italic; margin-bottom:30px; "></h5>
                 </div>
                 <div class=" row">
-                  <form class="col s12">
+                  <form class="col s12 contact-form" action="https://formspree.io/f/xoqroobe" method="POST" style="background-color:;">
                     <div class="row">
                       <div class="input-field col s12">
-                        <input placeholder="" id="first_name" type="text" class="validate">
-                        <label style="font-size:14px;" for="first_name">Name</label>
+                        <label style="font-size:14px;" name="name" for="name" >Name</label>
+                        <input placeholder="" id="name" type="text" class="validate" required>
                       </div>
                     </div>
                     <div class="row">
                       <div class="input-field col s12">
-                        <input placeholder="" id="email" type="email" class="validate">
-                        <label style="font-size:14px;" for="email">Email</label>
+                        <input placeholder="" id="email" type="email" name="email"  class="validate" required>
+                        <label style="font-size:14px;" for="email" >Email</label>
+                        <span class="helper-text" data-error="please enter valid email" data-success=""></span>
                       </div>
                     </div>
                     <div class="row">
                       <div class="input-field col s12">
-                        <input placeholder="" id="Phone" type="text" class="validate">
+                        <input placeholder="" id="phone" name="phone" type="tel" class="validate" pattern="[0-9]{10}" required>
                         <label style="font-size:14px;" for="phone">Phone</label>
+                        <span class="helper-text" data-error="please enter valid number Format: 123-456-7890" data-success=""></span>
                       </div>
                     </div>
                     <div style="padding-right:10px; padding-left:10px;"class="row">
-                        <label style="font-size:11px;" for="message">Message</label>
+                        <label style="font-size:11px;" name="message" for="message">Message</label required>
                          <textarea style="opacity:; border-radius:5px; border-color: lightgrey; height:160px" id="subject" name="subject" placeholder=""  ></textarea>
                     </div>
                     <div style="margin-top:-0%; margin-left:1px;"class="row">
-                      <button type="button"  class="contact-button btn btn-secondary btn-lg" disabled>SUBMIT</button>
+
+                      <button type="submit"  class="retro-button-2" >SUBMIT</button>
                     </div>
                   </form>
                 </div>

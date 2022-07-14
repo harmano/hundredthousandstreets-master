@@ -1,3 +1,23 @@
+
+/*.....T-Contact form...*/
+.contact-form{
+  background-color: #ededed ;
+  padding: 3vw 3vw !important;
+  border-radius: 10px;
+}
+.retro-button-2{
+  width: 100%;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  transition-duration: .5s;
+}
+.retro-button-2:hover{
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(179, 179, 179);
+  color: rgb(0, 0, 0);
+}
 /*.....T-Text Glitch...*/
 
 
