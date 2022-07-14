@@ -145,10 +145,10 @@
                     <div class="col-4 col text-right"><i class="fas fa-envelope" style="padding-left: ; font-size:20px; color:black;"></i></div>
                     <div   class="col text-left texty phone-text"><a href="mailto:contact@houseofwrap.com">team@hundredthousandstreets.com</a></div>
                 </div>-->
-                <!--<div class="row" style="padding-top:20px;">
+                <div class="row" style="padding-top:20px;">
                     <div class="col-4 col text-right"><i class="fas fa-map-marker-alt"  style="padding-left: ; font-size:20px; color:black;"></i></div>
                     <div   class="col text-left texty phone-text"><a target="_blank" href="https://www.google.com/maps/place/1730+Steeles+Ave+E+%231,+Brampton,+ON+L6T+1A4/@43.6992675,-79.7001921,17z/data=!3m1!4b1!4m5!3m4!1s0x882b3e7cfde5a22d:0xa5f5983fb8f2d297!8m2!3d43.6992636!4d-79.6980034">1730 Steeles Ave East Unit #1 Brampton, Ontario</a></div>
-                </div>-->
+                </div>
                 <div class="row" style="padding-top:20px;">
                     <div class="col-4 col text-right"><i class="far fa-clock"  style="padding-left: ; font-size:20px; color:black;"></i></div>
                     <div   class="col text-left texty phone-text"><a>Hours (by appointment only)</a></div>
@@ -165,33 +165,34 @@
                     <h5 style="font-weight: 600; font-style: italic; margin-bottom:30px; "></h5>
                 </div>
                 <div class=" row">
-                  <form class="col s12">
+                  <form class="col s12" action="https://formspree.io/f/xoqroobe" method="POST">
                     <div class="row">
                       <div class="input-field col s12">
-                        <input placeholder="" id="first_name" type="text" class="validate">
-                        <label style="font-size:14px;" for="first_name">Name</label>
+                        <input placeholder="" id="name" type="text" class="validate" required>
+                        <label style="font-size:14px;" for="first_name " >Name</label>
                       </div>
                     </div>
                     <div class="row">
                       <div class="input-field col s12">
-                        <input placeholder="" id="email" type="email" class="validate">
+                        <input placeholder="" id="email" type="email" class="validate" required>
                         <label style="font-size:14px;" for="email">Email</label>
                       </div>
                     </div>
                     <div class="row">
                       <div class="input-field col s12">
-                        <input placeholder="" id="Phone" type="text" class="validate">
+                        <input placeholder="" id="Phone" type="text" class="validate" required>
                         <label style="font-size:14px;" for="phone">Phone</label>
                       </div>
                     </div>
                     <div style="padding-right:10px; padding-left:10px;"class="row">
-                        <label style="font-size:11px;" for="message">Message</label>
+                        <label style="font-size:11px;" for="message">Message</label required>
                          <textarea style="opacity:; border-radius:5px; border-color: lightgrey; height:160px" id="subject" name="subject" placeholder=""  ></textarea>
                     </div>
                     <div style="margin-top:-0%; margin-left:1px;"class="row">
-                      <button type="button"  class="contact-button btn btn-secondary btn-lg" disabled>SUBMIT</button>
+                      <button type="submit"  class="retro-button" >SUBMIT</button>
                     </div>
                   </form>
+                  
                 </div>
               </div>
 
