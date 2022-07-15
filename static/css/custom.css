@@ -77,7 +77,8 @@ background colorcolor:f5f5f5
   background-color: rgb(216, 216, 216) !important;
   transition-duration: .3s !important;
   margin-left: -15px !important;
-  -webkit-appearance: none;
+  -webkit-appearance: none !important;
+  color: black !important;
 }
 .retro-button-3:hover{
   padding:2px 10px;
