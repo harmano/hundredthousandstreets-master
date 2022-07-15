@@ -27,7 +27,114 @@
                gtag('config', 'G-2S6W36YYSW');
                </script>
     </head>
-
+    <style media="screen">
+      .login-button{
+        align-content: center;
+        margin-left: 35%;
+        margin-top: 0px;
+        margin-bottom: 5px;
+      }
+      .logo{
+        width: 200px;
+        padding-bottom: 0px;
+        padding-top: 4%;
+      }
+      .htext{
+        font-size: 15px;
+        color: black;
+        font-weight: 0;
+        padding: ;
+      
+        font-family: 'Laila', serif;
+      
+      }
+      .ptext2{
+        font-size: 14px;
+        font-weight: 0;
+        color: white;
+      
+        font-family: 'Laila', serif;
+        margin-top: 20px;
+      
+      }
+      .ptext{
+        font-size: 10px;
+        font-weight: 0;
+      
+      
+        font-family: 'Laila', serif;
+      
+      }
+        
+    
+      .login {
+        font-family: 'Open Sans';
+        border: 1px solid #888;
+        display:inline-block;
+        background-color: #fafafa;
+        box-shadow: 1px 1px 10px #777;
+        border-radius: 7px;
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      
+      .top {
+        font-size: 15px;
+        padding: 10px 20px;
+        font-weight: 700;
+      }
+      
+      .middle {
+        font-size: 15px;
+        border: 1px solid #999;
+        border-radius: 3px;
+        display: inline-block;
+        padding: 10px 10px 5px;
+        background-color: #eee;
+      }
+      
+      .bottom {
+        font-size: 11px;
+        padding: 10px 20px;
+      }
+      
+      .login-input {
+        padding: 1px;
+        transition: outline .3s;
+        background-color: rgb(255, 255, 255) !important;
+        border: 1px solid rgb(167, 167, 167) !important;
+      }
+      
+      .error {
+        font-size: 12px;
+        background-color: #FFC2BD;
+        padding: 5px;
+        display: none;
+        border-radius: 2px;
+      
+        vertical-align: middle;
+      }
+      
+      .error-img {
+        width: 24px;
+        vertical-align: middle;
+      }
+      
+      .input-field2 input[type=text]:focus  {
+    border-bottom: 1px solid rgb(184, 184, 184) !important;
+    box-shadow: 0 1px  rgb(146, 146, 146) !important;
+    background-color: rgb(223, 223, 223) !important;
+  }
+  .input-field2 input[type=password]:focus {
+    border-bottom: 1px solid rgb(184, 184, 184) !important;
+    box-shadow: 0 1px  rgb(146, 146, 146) !important;
+    background-color: rgb(223, 223, 223) !important;
+  }
+  .input-field2 input[type=text]:focus  .login-input  {
+    background-color: brown;
+  }
+      </style>
     <body>
       <nav class=" hide-on-med-and-down">
         <div class="nav-wrapper ">
@@ -71,8 +178,52 @@
         <li class="navlinks"><a href="contact.html" style="font-size: 12px;">CONTACT</a></li>
       </ul>
       </br>
-
-    <!--- Header --->
+      <section lass="container" >
+        <div class="center-screen">
+          <div class="login">
+            <div class="top">
+              <p>Member Login
+              </p>
+            </div>
+            <div class="middle">
+              <table>
+                <tr style="border: 0px !important;">
+                  <td><label for="username">Username</label></td>
+                  <td>
+                    <div class="input-field2">
+                      <input class="login-input" id="username" type="text" autocomplete="off" /></td>
+                    </div>
+                    
+                </tr>
+                <tr style="border: 0px !important;">
+                  <td><label for="password">Password</label></td>
+            
+                  <td >
+                    <div class="input-field2">
+                      <input class="login-input" id="password" type="password" /></td>
+                    </div>
+                </tr>
+                <tr style="border: 0px !important;">
+                  <td colspan="2"><input class="login-button" type=submit value="Login" /></td>
+                </tr>
+                <tr style="border: 0px !important;">
+                  <td class="error" colspan="2">
+                    <img class="error-img" src="https://cdn2.iconfinder.com/data/icons/dragonball-z-colored/48/Cartoons__Anime_Dragonball_Artboard_11-512.png" />
+          
+                    <span id="login-err-msg"></span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div style="padding-top:20px;"class="bottom">
+          
+              <span class="ptext">Copyright &copy; hundredthousandstreets. All Rights Reserved.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+       
+    <!--- 
     <div class="container" style="padding: 150px 0 400px 0;">
       <div class="row">
         <div class="col-12 text-logo-container">
@@ -84,32 +235,19 @@
         </div>
         
     </div>
-          </div>
+          </div> --->
       
     <!--- Work --->
     
     <!--- Footer --->
-    <div style="bottom: ;">
-        <!-- alt social logos
-        <div class="row col-lg-3 col-md-6 col-sm-6">
-                        <div class="col text-center ">
-                            <ul  class="list-inline social-links2 ">
-                                <li ><a  href="#"><i class="fab fa-facebook"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="col  text-center ">
-                            <ul class="list-inline social-links2 ">
-                                <li><a  href="#"><i class="fab fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="col  text-center ">
-                            <ul class="list-inline social-links2 ">
-                                <li><a  href="#"><i class="fab fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div> -->
+    <div style="position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;" >
+        
 
-        <div class="row ">
+        <div class="row " >
             <div class="col text-right padding-left-icon" >
                 <a target="_blank" href="http://www.instagram.com/hundredthousandstreets"><i class=" padding-left-icon fab fa-instagram" style="padding-left:15px; font-size:12px; color:black;"></i></a>
                 <!-- <a target="_blank" href="https://www.facebook.com/Hundred-Thousand-Streets-102393484951520s"><i class="padding-left-icon fab fa-facebook-f " style="padding-left:15px; font-size:12px; color:black;"></i></a>-->
@@ -156,6 +294,28 @@
         document.getElementById("defaultOpen").click();
     </script>
 
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>s
+<script>
+  $('.login-button').click(function() {
+  var user = $('#username').val();
+  var pass = $('#password').val();
 
+  if (user != 'admin' && pass != 'password') {
+    $('#login-err-msg').html('Username & Password are Invalid');
+    $('.error').show('fast');
+  } else if (user != 'admin') {
+    $('#login-err-msg').html('Username is invalid');
+    $('.error').show('fast');
+  } else if (pass != 'password') {
+    $('#login-err-msg').html('Password is invalid');
+    $('.error').show('fast');
+  } else {
+    $('.error').hide('fast');
+  }
+  });
+</script>
 
 </html>
