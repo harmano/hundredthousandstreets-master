@@ -70,8 +70,10 @@ background colorcolor:f5f5f5
   color: rgb(0, 0, 0);
 }
 .retro-button-3{
-  padding:2px 10px;
-  transition-duration: .3s;
+  padding:2px 10px !important;
+  border-radius: 0px !important;
+  background-color: rgb(216, 216, 216)
+  transition-duration: .3s !important;
   margin-left: -15px !important;
 }
 .retro-button-3:hover{
@@ -990,6 +992,11 @@ footer {
     .mobile-display{
       display: none;
     }
+    .portfolio-experiment .experiment-title {
+
+      font-size: 10.5vw;
+
+    }
 }
 
 
@@ -1065,6 +1072,11 @@ footer {
       margin-top: 0px;
       padding-left: 0px;
       margin-right: 0px;
+    }
+    .portfolio-experiment .experiment-title {
+
+      font-size: 3.5vw;
+
     }
 
 }
