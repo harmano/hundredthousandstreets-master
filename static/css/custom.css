@@ -204,6 +204,7 @@ background-color: rgb(202, 202, 202);
     font-style: normal;
     text-decoration: none;
     text-transform: none;
+    color: #000000;
     
   }
   4% {
@@ -211,36 +212,44 @@ background-color: rgb(202, 202, 202);
     font-style: normal;
     text-decoration: none;
     text-transform: capitalize;
+    color: #000000;
   }
   6% {
     font-weight: 100;
     font-style: normal;
     text-decoration: none;
     text-transform: none;
+    color: #FFF11B;
   }
   8% {
     font-weight: 400;
     font-style: italic;
     text-decoration: none;
     text-transform: none;
+    color: #FFF11B;
   }
   10% {
     font-weight: 600;
     font-style: italic;
     text-decoration: none;
     text-transform: uppercase;
+    text-transform: none;
+    color: red;
   }
   12% {
     font-weight: 600;
     font-style: normal;
     text-decoration: line-through;
     text-transform: uppercase;
+    text-transform: none;
+    color: red;
   }
   14% {
     font-weight: 400;
     font-style: normal;
     text-decoration: line-through;
     text-transform: none;
+    color: #000000;
   }
   16% {
     font-weight: 500;
@@ -258,7 +267,7 @@ background-color: rgb(202, 202, 202);
     font-weight: 100;
     font-style: normal;
     text-decoration: none;
-    text-transform: none;
+   
   }
   22% {
     font-weight: 100;
@@ -271,6 +280,7 @@ background-color: rgb(202, 202, 202);
     font-style: normal;
     text-decoration: none;
     text-transform: none;
+    color: red;
   }
   26% {
     font-weight: 300;
@@ -495,302 +505,7 @@ background-color: rgb(202, 202, 202);
     text-transform: lowercase;
   }
 }
-@keyframes cray {
-  2% {
-    font-weight: 600;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  4% {
-    font-weight: 500;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: capitalize;
-  }
-  6% {
-    font-weight: 100;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  8% {
-    font-weight: 400;
-    font-style: italic;
-    text-decoration: none;
-    text-transform: none;
-  }
-  10% {
-    font-weight: 600;
-    font-style: italic;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  12% {
-    font-weight: 600;
-    font-style: normal;
-    text-decoration: line-through;
-    text-transform: uppercase;
-  }
-  14% {
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: line-through;
-    text-transform: none;
-  }
-  16% {
-    font-weight: 500;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: lowercase;
-  }
-  18% {
-    font-weight: 500;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: lowercase;
-  }
-  20% {
-    font-weight: 100;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  22% {
-    font-weight: 100;
-    font-style: normal;
-    text-decoration: underline;
-    text-transform: none;
-  }
-  24% {
-    font-weight: 100;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  26% {
-    font-weight: 300;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  28% {
-    font-weight: 600;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  30% {
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: capitalize;
-  }
-  32% {
-    font-weight: 500;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  34% {
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  36% {
-    font-weight: 300;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: capitalize;
-  }
-  38% {
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  40% {
-    font-weight: 200;
-    font-style: normal;
-    text-decoration: underline;
-    text-transform: none;
-  }
-  42% {
-    font-weight: 600;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: capitalize;
-  }
-  44% {
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: underline;
-    text-transform: none;
-  }
-  46% {
-    font-weight: 700;
-    font-style: italic;
-    text-decoration: line-through;
-    text-transform: none;
-  }
-  48% {
-    font-weight: 300;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  50% {
-    font-weight: 300;
-    font-style: normal;
-    text-decoration: underline;
-    text-transform: none;
-  }
-  52% {
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  54% {
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: underline;
-    text-transform: capitalize;
-  }
-  56% {
-    font-weight: 100;
-    font-style: normal;
-    text-decoration: line-through;
-    text-transform: none;
-  }
-  58% {
-    font-weight: 500;
-    font-style: normal;
-    text-decoration: underline;
-    text-transform: uppercase;
-  }
-  60% {
-    font-weight: 500;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  62% {
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  64% {
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  66% {
-    font-weight: 500;
-    font-style: italic;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  68% {
-    font-weight: 600;
-    font-style: normal;
-    text-decoration: line-through;
-    text-transform: none;
-  }
-  70% {
-    font-weight: 100;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  72% {
-    font-weight: 300;
-    font-style: normal;
-    text-decoration: underline;
-    text-transform: none;
-  }
-  74% {
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  76% {
-    font-weight: 500;
-    font-style: normal;
-    text-decoration: underline;
-    text-transform: none;
-  }
-  78% {
-    font-weight: 100;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  80% {
-    font-weight: 600;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  82% {
-    font-weight: 200;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  84% {
-    font-weight: 200;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  86% {
-    font-weight: 100;
-    font-style: italic;
-    text-decoration: none;
-    text-transform: none;
-  }
-  88% {
-    font-weight: 500;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: lowercase;
-  }
-  90% {
-    font-weight: 100;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  92% {
-    font-weight: 100;
-    font-style: italic;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  94% {
-    font-weight: 100;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  96% {
-    font-weight: 600;
-    font-style: italic;
-    text-decoration: none;
-    text-transform: capitalize;
-  }
-  98% {
-    font-weight: 300;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: lowercase;
-  }
-}
+
 /*........*/
 
 
@@ -946,6 +661,9 @@ footer {
     text-decoration: none;
     color: black;
 }
+    .fade-in {
+      animation-duration: 2s !important;
+    }
     .font-camaro{
       font-family: 'Laila', serif;
       margin-left: 15px;
@@ -1129,11 +847,60 @@ footer {
 .botton2 li a i:hover{
     background: #7C94B1;
 }
-
-.navlinks:hover{
+.navlinks a{
+  background-color: rgba(255, 0, 0, 0) !important;
+}
+.navlinks a:hover{
     text-decoration: none;
     color: black;
+    font-weight: 700;
 }
+.navlinks .activcen{
+  font-weight: 800 !important;
+  font-style: italic;
+  
+}
+
+.activcen a{
+  font-weight: 800 !important;
+  color: #D61A1F !important;
+}
+
+.fade-in {
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 4s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+  }
+  70% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.shop-bg-color{ 
+  animation: background-fade 1.5s forwards;
+}
+
+
+@keyframes background-fade {
+  0% {
+      background:#ffffff;
+  }
+  100% {
+      background:#000000;
+  }
+}
+
+
 
 /*...... Neon Logo ......*/
 

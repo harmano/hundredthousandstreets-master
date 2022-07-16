@@ -122,44 +122,86 @@
         vertical-align: middle;
       }
       
-      .input-field2 input[type=text]:focus  {
-    border-bottom: 1px solid rgb(184, 184, 184) !important;
-    box-shadow: 0 1px  rgb(146, 146, 146) !important;
-    background-color: rgb(223, 223, 223) !important;
-  }
-  .input-field2 input[type=password]:focus {
-    border-bottom: 1px solid rgb(184, 184, 184) !important;
-    box-shadow: 0 1px  rgb(146, 146, 146) !important;
-    background-color: rgb(223, 223, 223) !important;
-  }
-  .input-field2 input[type=text]:focus  .login-input  {
-    background-color: brown;
-  }
+            .input-field2 input[type=text]:focus  {
+          border-bottom: 1px solid rgb(184, 184, 184) !important;
+          box-shadow: 0 1px  rgb(146, 146, 146) !important;
+          background-color: rgb(223, 223, 223) !important;
+        }
+        .input-field2 input[type=password]:focus {
+          border-bottom: 1px solid rgb(184, 184, 184) !important;
+          box-shadow: 0 1px  rgb(146, 146, 146) !important;
+          background-color: rgb(223, 223, 223) !important;
+        }
+        .input-field2 input[type=text]:focus  .login-input  {
+          background-color: brown;
+        }
+          nav{
+            color: rgba(255, 0, 0, 0) !important;
+          }
+          .navlinks a:hover{
+            text-decoration: none;
+            font-weight: 700;
+            color: #000000;
+        }
+        .activcen2 a{
+          font-weight: 800 !important;
+          font-style: italic;
+        }
+     
+      .navlinks a{
+        animation: background-fade-font 2s forwards;
+      }
+        @keyframes background-fade-font {
+          0% {
+              color:#000000;
+          }
+          90% {
+              color:#000000;
+          }
+          100% {
+              color:#ff0000fa;
+          }
+        }
+      .footer-color{
+        color: black;
+      }
+
+      .bar1, .bar2, .bar3, .bar4 {
+
+        background-color: rgb(255, 0, 0);
+
+      }
+
+
       </style>
-    <body>
-      <nav class=" hide-on-med-and-down">
+  
+    <body class="shop-bg-color">
+
+ 
+        
+      <nav class=" hide-on-med-and-down shop-bg-color " >
         <div class="nav-wrapper ">
-          <a href="index.html" class="logo-icon"><img style=" width:80px; height:80px; margin-top: 10px;"src="static/img/circle_illusion_black copy.jpg"></img></a>
+          <a href="index.html" class="logo-icon"><img style=" width:80px; height:80px; margin-top: 10px;"src="static/img/100-logo-img.png"></img></a>
 
           <ul style="font-size: 12px; padding-right:90px;"  id="nav-mobile" class="right hide-on-med-and-down navlinks">
-            <li class="navlinks"><a href="index.html" style="font-size: 11px;" >HOME</a></li>
-            <li class="navlinks"><a href="shop.html" style="font-size: 12px;">SHOP</a></li>
+            <li class="navlinks "><a  href="index.html" style="font-size: 11px;" >HOME</a></li>
+            <li class="navlinks activcen2 "><a  href="shop.html" style="font-size: 12px; ">SHOP</a></li>
 
-            <li   class="navlinks"><a href="portfolio.html" style="font-size: 11px;" >PORTFOLIO</a></li>
-            <li class="navlinks"><a href="services.html" style="font-size: 11px;">SERVICES</a></li>
+            <li   class="navlinks"><a  href="portfolio.html" style="font-size: 11px;" >PORTFOLIO</a></li>
+            <li class="navlinks"><a  href="services.html" style="font-size: 11px; ">SERVICES</a></li>
             <!-- <li class="navlinks"><a href="{% url 'home' %}" style="font-size: 12px;">MERCH</a></li> -->
-            <li class="navlinks"><a href="contact.html" style="font-size: 11px;">CONTACT</a></li>
+            <li class="navlinks"><a  href="contact.html" style="font-size: 11px;">CONTACT</a></li>
           </ul>
         </div>
 
       </nav>
       <!--  Mobile -->
-      <nav >
+      <nav style="border: 0px !important; "  class="hide-on-large-only shop-bg-yellow">
      
-        <div style="padding-top: 10px;"class="nav-wrapper hide-on-large-only">
-          <a href="index.html" class="logo-icon"><img style=" width:60px; height:60px; margin-top: 3px;"src="static/img/circle_illusion_black copy.jpg"></img></a>
+        <div style="padding-top: 10px;"class="nav-wrapper hide-on-large-only shop-bg-color">
+          <a href="index.html" class="logo-icon"><img style=" width:60px; height:60px; margin-top: 3px;"src="static/img/100-logo-img.png"></img></a>
           <a href="#" data-target="mobile-demo" class="right sidenav-trigger">
-            <div class="container" onclick="myFunction(this)">
+            <div class="container fade-in " onclick="myFunction(this)">
               <div class="bar1"></div>
               <div class="bar2"></div>
               <div class="bar3"></div>
@@ -169,9 +211,9 @@
           </a>
         </div>
       </nav>
-      <ul class="sidenav" id="mobile-demo">
-        <li class="navlinks"><a href="index.html" style="font-size: 12px;" >HOME</a></li>
-        <li class="navlinks"><a href="shop.html" style="font-size: 12px;">SHOP</a></li>
+      <ul class="sidenav" id="mobile-demo" >
+        <li class="navlinks "><a href="index.html" style="font-size: 12px;" >HOME</a></li>
+        <li class="navlinks activcen"><a href="shop.html" style="font-size: 12px;">SHOP</a></li>
 
         <li   class="navlinks"><a href="portfolio.html" style="font-size: 12px;" >PORTFOLIO</a></li>
         <li class="navlinks"><a href="services.html" style="font-size: 12px;">SERVICES</a></li>
@@ -179,11 +221,11 @@
         <li class="navlinks"><a href="contact.html" style="font-size: 12px;">CONTACT</a></li>
       </ul>
       </br>
-      <section lass="container" >
-        <div class="center-screen">
+      <section lass="container" style="" >
+        <div class="center-screen fade-in">
           <div class="login">
             <div class="top">
-              <p>Member Login
+              <p>Member Shop Login
               </p>
             </div>
             <div class="middle">
@@ -250,15 +292,15 @@
 
         <div class="row " >
             <div class="col text-right padding-left-icon" >
-                <a target="_blank" href="http://www.instagram.com/hundredthousandstreets"><i class=" padding-left-icon fab fa-instagram" style="padding-left:15px; font-size:12px; color:black;"></i></a>
+                <a target="_blank" href="http://www.instagram.com/hundredthousandstreets"><i class=" footer-color padding-left-icon fab fa-instagram" style="padding-left:15px; font-size:12px; color:black;"></i></a>
                 <!-- <a target="_blank" href="https://www.facebook.com/Hundred-Thousand-Streets-102393484951520s"><i class="padding-left-icon fab fa-facebook-f " style="padding-left:15px; font-size:12px; color:black;"></i></a>-->
-                <a href="tel:647-795-6275"><i class=" padding-left-icon fas fa-phone" style="padding-left:15px; font-size:12px; color:black;"></i></a>
+                <a href="tel:647-795-6275"><i class=" footer-color padding-left-icon fas fa-phone" style="padding-left:15px; font-size:12px; color:black;"></i></a>
             </div>
         </div>
         <div class="row links">
-            <div class="font-1 col text-left">Newsletter Coming Soon</div>
-            <div class="font-1 col text-center">© 2022 hundredthousandstreets Corp.</div>
-            <div class="font-1 ho col text-right"> <a href="customerservice.html">CUSTOMER   SERVICE</a>   </div>
+            <div class="font-1 col text-left footer-color">Newsletter Coming Soon</div>
+            <div class="font-1 col text-center footer-color">© 2022 hundredthousandstreets Corp.</div>
+            <div class="font-1  col text-right "> <a class="footer-color" href="customerservice.html">CUSTOMER   SERVICE</a>   </div>
         </div>
     </div>
 
