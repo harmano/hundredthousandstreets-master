@@ -181,8 +181,8 @@
                     </div>
                     <div class="row" style="margin-bottom: 0;">
                       <div class="input-field col-6">
-                          <input placeholder="preferred install date" class="textbox-n"  type="text" onfocus="(this.type='date')" onkeypress="return false" id="installDate" name="installDate" onchange="getDate()" required>
-                          <span  id="result" class="helper-text" data-error="please enter valid date" data-success=""></span>
+                        <input  placeholder="preferred install date" type="text" class="datepicker" id="installDate" name="installDate"  onchange="getDate()">
+                                                  <span  id="result" class="helper-text" data-error="please enter valid date" data-success=""></span>
 
                       </div>
                       <div class="input-field col-6">
@@ -281,6 +281,11 @@
         [...document.getElementsByClassName("timercountdown")].forEach(e=>e.innerHTML = "EXPIRED");
       }
     }, 1000);
+      // Or with jQuery
+
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
     </script>
 
 </html>
