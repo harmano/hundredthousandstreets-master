@@ -58,3 +58,32 @@ setTimeout(function() {
   	}, 350)
   }, 300)
 }, 600)
+
+// Date picker for booking form
+var givenDate = Date.parse(document.bookingForm.inputDate.value);
+function getDate() {
+  var givenDate = Date.parse(document.bookingForm.inputDate.value);
+  if (!givenDate.isNaN) {
+  
+   // set hours, minutes, seconds, milisecconds to zero for a comparison
+   // on date only
+    givenDate = new Date(givenDate).setHours(0,0,0,0);
+    var todaysDate = new Date().setHours(0, 0, 0, 0); 
+
+    if (givenDate >= todaysDate) {
+      result.innerHTML = 'We\'ll confirm this date soon';
+      result.style.color = 'green';
+    } else {
+      result.innerHTML = "Please choose a future date.";
+      result.style.color = 'red';
+    }
+  }
+}
+
+
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
+
