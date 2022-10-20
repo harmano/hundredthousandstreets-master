@@ -28,7 +28,8 @@ var countDownDate = new Date("oct 30, 2022 10:00:00").getTime();
       }, 1000);
 
 racingstripe = 2;
-colorChange = 3;
+colorChange = 1;
+EcolorChange = 4;
 customDecal = 1;
 hoodroofwrap = 0;
 
@@ -36,6 +37,7 @@ hoodroofwrap = 0;
 [...document.getElementsByClassName("racingstripe")].forEach(e => e.innerHTML = '(' + racingstripe + ')' + ' remaining');
 [...document.getElementsByClassName("colorchange")].forEach(e => e.innerHTML = '(' + colorChange + ')' + ' remaining');
 [...document.getElementsByClassName("customdecal")].forEach(e => e.innerHTML = '(' + customDecal + ')' + ' remaining');
+[...document.getElementsByClassName("EcolorChange")].forEach(e => e.innerHTML = '(' + EcolorChange + ')' + ' remaining');
 [...document.getElementsByClassName("hoodroofwrap")].forEach(e => e.innerHTML = 'SOLD OUT');
 
 
